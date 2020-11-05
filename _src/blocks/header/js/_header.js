@@ -17,6 +17,20 @@ function adaptive_header(w, h) {
       headerLang.removeClass('done').prependTo($('.header-top'));
     }
   }
+  if (w < 740) {
+    if (!$('.header-bottom-menu').hasClass('done')) {
+      $('.header-bottom-menu').addClass('done').appendTo(headerMenu);
+    }
+  }
+  else {
+    console.log($('.header-bottom-menu:first-child'))
+    $.each($('.header-bottom-menu'), function (i, item) {
+
+    })
+    if ($('.header-bottom-menu').hasClass('done')) {
+      $('.header-bottom-menu').removeClass('done').prependTo($('.header-bottom__column'));
+    }
+  }
 }
 function adaptive_function() {
   var w = $(window).outerWidth();
