@@ -1,0 +1,35 @@
+.header
+  .container
+    .container-padding
+      .header-top
+        .header-top-lang
+          a.header-top-lang__item.active(href="#") EN
+          a.header-top-lang__item(href="#") RU
+          a.header-top-lang__item(href="#") ESP
+        a.header-top__link(href="#") Online ordering
+      .header-bottom
+        .header-bottom__column
+          nav.header-bottom-menu
+            ul.header-bottom-menu-list
+              - const menuListL = [{text: 'ABOUT'}, {text: 'Menus'}, {text: 'Service Info'}]
+              each item in menuListL
+                li
+                  a.header-bottom-menu__link(href="#")= item.text
+        .header-bottom__column
+          a.header-logo(href="#")
+            span.header-logo__text NYC'S
+            span.header-logo__image
+              img(src="img/logo.png" alt="PrimeOne")
+            span.header-logo__text Catering
+        .header-bottom__column
+          nav.header-bottom-menu
+            ul.header-bottom-menu-list
+              - const menuListR = [{text: 'Gallery'}, {text: 'Friends'}, {text: 'Contact'}]
+              each item in menuListR
+                li
+                  a.header-bottom-menu__link(href="#")= item.text
+      .header-menu__icon
+        span
+        span
+        span
+      .header-menu
