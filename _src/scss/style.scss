@@ -1,6 +1,7 @@
 @import 'mixin';
 @import 'fonts';
-@import '../blocks/header/header';
+@import '../blocks/_header/header';
+@import '../blocks/_logo/logo';
 
 body {
   margin: 0;
@@ -18,8 +19,8 @@ body {
   padding: 0 20px;
 }
 
-// @media (max-width: 740px) {
-  //   .container-padding {
-  //     padding: 0 10px;
-  //   }
-  // }
+@media (max-width: 740px) {
+  .container-padding {
+    padding: 0 10px;
+  }
+}

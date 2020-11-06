@@ -1,0 +1,48 @@
+.logo {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo__text {
+  @include font-s("Bebas", 10px, 8px, #000);
+  letter-spacing: 5.8px;
+  text-transform: uppercase;
+
+  &:nth-child(3) {
+    letter-spacing: 9px;
+  }
+
+  @media (max-width: 740px) {
+    font-size: 8px;
+  }
+
+  @media (max-width: 480px) {
+    letter-spacing: 4px;
+
+    &:nth-child(3) {
+      letter-spacing: 4px;
+    }
+  }
+}
+
+.logo__image {
+  margin: 13px 0 20px;
+
+  @media (max-width: 740px) {
+    margin: 2px 0 5px;
+
+    img {
+      width: 150px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    margin: 0 0 2px 0;
+
+    img {
+      width: 100px;
+    }
+  }
+}
