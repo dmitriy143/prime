@@ -23,13 +23,11 @@ function adaptive_header(w, h) {
     }
   }
   else {
-    console.log($('.header-bottom-menu:first-child'))
-    $.each($('.header-bottom-menu'), function (i, item) {
-
-    })
     if ($('.header-bottom-menu').hasClass('done')) {
-      $('.header-bottom-menu').removeClass('done').prependTo($('.header-bottom__column'));
+      $('.header-bottom-menu').eq(0).removeClass('done').prependTo($('.header-bottom__column').eq(0));
+      $('.header-bottom-menu').eq(1).removeClass('done').prependTo($('.header-bottom__column').eq(2));
     }
+
   }
 }
 function adaptive_function() {
