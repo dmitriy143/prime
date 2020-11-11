@@ -1,5 +1,6 @@
 const hello = 'привет я js зи блока header';
 
+// добавляем/убираем в header-menu блоки
 $(window).resize(function () {
   adaptive_function();
 });
@@ -7,6 +8,7 @@ $(window).resize(function () {
 function adaptive_header(w, h) {
   var headerMenu = $('.header-menu');
   var headerLang = $('.header-top-lang');
+
   if (w <= 740) {
     if (!headerLang.hasClass('done')) {
       headerLang.addClass('done').appendTo(headerMenu);
@@ -31,8 +33,22 @@ function adaptive_header(w, h) {
   }
 }
 function adaptive_function() {
-  var w = $(window).outerWidth();
+  var w = $('html').outerWidth(); //должно быть window
   var h = $(window).outerHeight();
   adaptive_header(w, h);
 }
-adaptive_function()
+
+adaptive_function();
+
+// появление меню
+$('.header-menu__icon').on('click', function () {
+  $(this).toggleClass('active')
+  $('.header-menu').toggleClass('active');
+  if ($(this).hasClass('active')) {
+    $('body').data('scrollTop', $(window).scrollTop());
+  }
+  $('body').toggleClass('lock');
+  if (!$('this').hasClass('active')) {
+    $('bady,html').scrollTop(parseInt($('body').data('scroll')))
+  }
+})

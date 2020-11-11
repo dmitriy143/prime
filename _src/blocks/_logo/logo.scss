@@ -1,4 +1,9 @@
+// $colorTextMain: #000;
+
+
 .logo {
+  position: relative;
+  z-index: 11;
   text-decoration: none;
   display: flex;
   flex-direction: column;
@@ -6,7 +11,7 @@
 }
 
 .logo__text {
-  @include font-s("Bebas", 10px, 8px, #000);
+  @include font-s("Bebas", 10px, 8px, $colorTextBlack);
   letter-spacing: 5.8px;
   text-transform: uppercase;
 
@@ -14,11 +19,11 @@
     letter-spacing: 9px;
   }
 
-  @media (max-width: 740px) {
+  @media (max-width: $sw2) {
     font-size: 8px;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: $sw3) {
     letter-spacing: 4px;
 
     &:nth-child(3) {
@@ -30,7 +35,7 @@
 .logo__image {
   margin: 13px 0 20px;
 
-  @media (max-width: 740px) {
+  @media (max-width: $sw2) {
     margin: 2px 0 5px;
 
     img {
@@ -38,7 +43,7 @@
     }
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: $sw3) {
     margin: 0 0 2px 0;
 
     img {

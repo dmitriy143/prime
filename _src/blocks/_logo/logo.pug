@@ -1,6 +1,8 @@
-mixin logo(className)
+mixin logo(className, text)
   a.logo(class= className href="#")
-    span.logo__text NYC'S
+    if text === 'withText'
+      span.logo__text NYC'S
     span.logo__image
       img(src="img/logo.png" alt="PrimeOne")
-    span.logo__text Catering
+    if text === 'withText'
+      span.logo__text Catering

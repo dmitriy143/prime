@@ -1,0 +1,28 @@
+.btn {
+  display: flex;
+  align-items: center;
+}
+
+.btn__btn {
+  display: inline-block;
+  padding: 17px 34px 16px 33px;
+  @include font-s('Bebas', 17px, 17px, $colorTextBlack);
+  letter-spacing: 2.3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: $colorBtnBlack;
+  margin-right: 14px;
+
+  &--w {
+    background-color: #fff;
+  }
+}
+
+.btn__link {
+  @include font-s('Bebas', 17px, 17px, $colorTextBlack);
+  letter-spacing: 2.7px;
+
+  &--white {
+    color: $colorTextWhite;
+  }
+}

@@ -1,0 +1,66 @@
+.private {
+  display: flex;
+  background-color: #000;
+}
+
+.private__column {
+  flex-basis: 50%;
+}
+
+.private__image {
+  height: 100%;
+}
+
+.private-body {
+  padding: 78px 0 75px 60px;
+
+  @media (max-width: $sw1) {
+    padding: 30px 0 30px 30px;
+  }
+}
+
+.private-body-content {
+  max-width: 305px;
+
+  @media (max-width: $sw1) {
+    max-width: 290px;
+  }
+}
+
+.private-body__title {
+  @include font-s('AkzidenzGroteskBQ-BdCnd', 50px, 50px, $colorTextWhite);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+
+  @media (max-width: $sw1) {
+    font-size: 35px;
+    margin-bottom: 14px;
+  }
+}
+
+.private-body__text {
+  @include font-s('PTSans', 15px, 25px, $colorTextWhite);
+  margin-bottom: 48px;
+
+  @media (max-width: $sw1) {
+    font-size: 13px;
+    margin-bottom: 30px;
+  }
+}
+
+.ibg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+// .private-body-buttons {}
+
+// .btn {}
+
+// .private-body-buttons__item {}
+
+// .btn--w {}
+
+// .private-body-buttons__link {}

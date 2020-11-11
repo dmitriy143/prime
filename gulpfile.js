@@ -18,7 +18,7 @@ const path = {
     fonts: source_folder + "/fonts/*.ttf"
   },
   watch: {
-    pug: [source_folder + "/*.pug", source_folder + "/blocks/**/*.pug"],
+    pug: [source_folder + "/layout/*.pug", source_folder + "/*.pug", source_folder + "/blocks/**/*.pug"],
     css: [source_folder + "/scss/*.scss", source_folder + "/blocks/**/*.scss"],
     js: [source_folder + "/js/**/*.js", source_folder + "/blocks/**/*.js"],
     img: [source_folder + "/img/**/*.{jpg, png, svg, gif, ico, webp}", source_folder + "/blocks/**/*.{jpg, png, svg, gif, ico, webp}"],

@@ -1,7 +1,19 @@
+$colorTextBlack: #000;
+$colorTextWhite: #fff;
+$colorBtnBlack: #000;
+
+// screen width
+$sw1: '880px';
+$sw2: '740px';
+$sw3: '480px';
+
 @import 'mixin';
 @import 'fonts';
 @import '../blocks/_header/header';
 @import '../blocks/_logo/logo';
+@import '../blocks/_private/private';
+@import '../blocks/_btn/btn';
+
 
 body {
   margin: 0;
