@@ -1,6 +1,23 @@
 .btn {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: start;
+
+  &--private {
+    flex-direction: row;
+    align-items: center;
+
+    @media (max-width: $sw2) {
+      flex-direction: column;
+      align-items: start;
+    }
+
+    @media (max-width: $sw3) {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
 }
 
 .btn__btn {
@@ -24,5 +41,13 @@
 
   &--white {
     color: $colorTextWhite;
+  }
+
+  @media (max-width: $sw2) {
+    margin-top: 29px;
+  }
+
+  @media (max-width: $sw3) {
+    margin-top: 0;
   }
 }

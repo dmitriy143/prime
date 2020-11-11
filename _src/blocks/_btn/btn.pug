@@ -1,4 +1,4 @@
-mixin btn(classElement, calssBtnMixin, classLinkMixin)
-  div(class= classElement).btn
+mixin btn(classElement, mix, calssBtnMixin, classLinkMixin)
+  div(class= `${classElement} btn ${mix}`)
     a.btn__btn(class= calssBtnMixin  href="#") Get a quote
     a.btn__link(class= classLinkMixin href="#") View menus

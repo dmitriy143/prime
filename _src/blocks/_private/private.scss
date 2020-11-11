@@ -5,6 +5,14 @@
 
 .private__column {
   flex-basis: 50%;
+
+  @media (max-width: $sw3) {
+    flex-basis: 100%;
+
+    &:first-child {
+      display: none;
+    }
+  }
 }
 
 .private__image {
@@ -54,13 +62,3 @@
   background-size: cover;
   background-position: center;
 }
-
-// .private-body-buttons {}
-
-// .btn {}
-
-// .private-body-buttons__item {}
-
-// .btn--w {}
-
-// .private-body-buttons__link {}
